@@ -1,0 +1,182 @@
+npm install -g create-reat-app
+npx create-react-app my app
+this two commends v r not using instead v are going for vite + react 
+37k to 70k files will get downloaded
+
+
+no unpaired tag concept in react js
+function App(){
+<App></App> or </App>----------------(components name )
+}
+
+
+
+
+
+
+
+
+
+
+Actually starts from here---------------------------------------------------------------------------------------------------------------------------------
+
+download nodejs from nodejs.org 
+then create a folder in any drive or desktop
+type cmd in created folder 
+in cmd write commend to check version: node -v
+after this type this command
+
+C:\Users\91829\Desktop\ReactJTheja>npm create vite@latest
+
+> npx
+> create-vite
+
+|
+o  Project name:
+|  myapp     ---------------(lowercase mandatory)
+|
+o  Select a framework:
+|  React
+|
+o  Select a variant:
+|  JavaScript
+|
+o  Scaffolding project in C:\Users\91829\Desktop\ReactJTheja\myapp...
+|
+—  Done. Now run:
+
+  cd myapp
+  npm install
+  npm run dev
+
+
+C:\Users\91829\Desktop\ReactJTheja>cd myapp
+
+C:\Users\91829\Desktop\ReactJTheja\myapp>npm install
+added 153 packages, and audited 154 packages in 3m
+
+33 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\91829\Desktop\ReactJTheja\myapp>npm run dev
+
+> myapp@0.0.0 dev
+> vite
+
+
+  VITE v6.3.5  ready in 596 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+
+open this url   http://localhost:5173/ in browser
+then come to cmd
+then press 
+ctrl+c
+because to stop the server (mandatory)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Interview question
+how to  install react application
+
+
+what is the command to create react application
+
+explain about project structure 
+node modules - having 3rd party data(every package is stored here)
+public folder - first index.html folder was there inside it but now it as taken out in this version
+src - all the program we should write here
+
+write a syntax to create a component as a jsx
+const Basic =() =>{
+//JSCODE
+<>
+{*HTML CODE*}
+<h2> I AM IN BASIC COMPONENT</h2>
+</>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+C:\Users\91829\Desktop\ReactJTheja\myapp>code .
+
+to open vscode
+package.json is important folder dont delete and dont touch this file(meta data is stored here)
+package-lock.json (meta operational data package is stored)
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+running in vs code
+ctrl+shift+(baptic symbol)`)
+it will open terminal and change directory from powershell to commend prompt
+
+in vs code
+icrosoft Windows [Version 10.0.22631.5189]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\91829\Desktop\ReactJTheja\myapp>npm run dev
+
+> myapp@0.0.0 dev
+> vite
+
+Port 5173 is in use, trying another one...
+
+  VITE v6.3.5  ready in 349 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Theory:
+
+browser understand -html and text language
+
+we are getting output from app.jsx from src
+
+in index.html  which not there in src folder ------------------ <script type="module" src="/src/main.jsx"></script>
+
+this index.html is connected to main.jsx in src ------------------                  createRoot(document.getElementById('root')).render -------where render is to take the data from   <StrictMode>
+    <App />
+  </StrictMode>,
+)  ---------------        import { createRoot } from 'react-dom/client' -go to node modules and go to react-dom and search for file client.js
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+deleting unwanted this from created folder
+go to app.jsx in src 
+delete all the code in app.jsx
+only code in app.jsx
+and write in app.jsx (1-----------)
+import './App.css'
+const App = () => {
+  return (
+    <h1>Welcome</h1>
+  );
+};
+
+export default App;
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+components name first letter should be capital, export in main,arrow function must, using const)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+return the information outside the function
+return is used for writing the html code using return
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+delete all the code present inside index.css in src --------(remember it is not index.html it is index.css present inside src)
+and in main.jsx remove(erase) this path ---------> import './index.css' (2-------------------------)
+delete all the code present inside app.css
+and
+inside app.css write css code (3--------------)
+*{
+  margin: 0;
+  padding: 0;
+ font-family: sans-serif;
+}
+
+ 	and link in 
+app.jsx by writing import './App.css'
+
+see in browser 

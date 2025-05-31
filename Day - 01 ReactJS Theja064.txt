@@ -1,0 +1,99 @@
+npm run dev ---------start the server
+ctrl+c -------------stop the server
+
+it is a single page application -----------only one index.html(language that browser will understand) in entire react project
+src(scorce code)-----------------we are writing js,css
+|
+|
+|----main.jsx(grandparent)
+|
+|----App.jsx(parent) ----------only importing code are used more
+|        
+|----Basic.jsx (component file name(for creating component,unique using const as a function), should be capital)
+
+Note:
+functions are the components we should import nothing but calling the function  
+fragment method ---- <> </> parent element for component or group the html elment 
+in app.jsx ----import React fro `react` inside it thee is A coponent called  <React.Fragent> </React.Fragment>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+index.html
+|
+|(dom metod)
+|
+main.js
+|import and export method
+|
+|
+App.jsx
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Basic.jsx(child of App.jsx)-------------------
+const asic = () =>{
+}
+export default Basic (exportig complete compnent------ when to use defaut)  (or) export Basic --------if no default is there then 
+                                                                                                      in app.jsx we should import with {} braces
+                                                                                                      import{Basic} from `./Basic.jsx`
+
+
+use of html --using ,,,,,,,,,,,,,return(
+t					topic 1
+                                          html code
+					<h1>Html code</h1>																	        <h1> {Dom code - in direct way only using {} used for interpolation} </h1> 
+						
+					topic 2
+                                         we have to use only one parent html element 
+					<div> (parent)
+					 <h1></h1>
+					<p></p>
+                                        </div> 
+
+
+                                        topic 3
+                                        we cannot use div tag instad we can go for <>frag method</>    
+                                        )
+inside Basic.js
+
+
+
+
+
+App.jsx(parent)
+import Basic from `./Basic.jsx`
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Create a Folder called Components
+and create file as Basic.jsx 
+copy Basic word and go to 
+App.jsx  import ctrl+space it will show suggestion as import Basic from './Components/Basic'; and app.jsx write a <Basic><Basic>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------static content-----<h2>dsvvsvv</h2> hardcoding the value
+dynamic content----<h3>{num}</h3>  taking the data from the variable 
+Static & dynamic content--- <h3>{num} + {num} = {sum}</h3> ----------<h3>+=</h3>(static)------------<h3>{num}  {num}  {sum}</h3>(Dynmaic)
+
+
+const Basic = () => {
+  // JS Code
+  let num = 100;
+  let sum = num + num;
+
+  return (
+    <>
+      {/* HTML Code */}
+      {/* Static content */}
+      <h2>I'm in Basic Component</h2>
+      {/* Dynamic Content */}
+      <h3>{num}</h3>
+
+      {/* Static & Dynamic Content */}
+      <h3>{num} + {num} = {sum}</h3>
+    </>
+  );
+};
+
+export default Basic;
+
+// write a program for creating 4 digit otp without using if else condition
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
