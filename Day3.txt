@@ -1,0 +1,103 @@
+PROGRAM 2
+-----------------------------------------
+
+import './Basic.css'
+
+-----------------------------------------
+
+import organic from '../assets/react.svg'
+
+-----------------------------------------
+
+const Basic = () => {
+  // JS Code
+   let myDesign = {
+    color:"brown",
+    background:"Yellow"
+  }
+  return (
+    <>
+-------------------------------------------------------------------------------------
+      // write a program for creating 4 digit otp without using if else condition
+      <h4>{Math.floor(Math.random()*9000+1000)}</h4>
+      <h4>{Math.floor(Math.random()*9000)}</h4>
+      <h4>{Math.random()*1000}</h4>
+-------------------------------------------------------------------------------------
+      {/* Inline Css: Two Ways */}
+
+      <h4 style={myDesign}>Learning React JS</h4>
+      <h3 style={{color:"aqua",background:"yellow"}}>Learning Core Java</h3>
+
+-------------------------------------------------------------------------------------
+      {/* External Css */}
+
+      <div className="box"></div>
+     -------------------------------
+      <h2>Inserting Images</h2>
+      <img src={organic} style={{height:"350px",width:"60vw"}}/>
+    </>
+  );
+};
+
+export default Basic;
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Types of CSS
+1) Inline CSS 
+2) External CSS 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+External CSS works perfectly in React.
+You just need to import './filename.css';
+
+
+ {/* External Css */}
+ <div className="box"></div>-----correct
+
+
+
+1.... In HTML, we write:
+
+<h1 class="heading">Hello HTML</h1>------incorrect
+✅ This is correct in HTML. 
+✅ We use class to add a CSS class. 
+❌ className is not used in HTML.
+
+
+
+2..... In React JS, we write:
+
+<h1 className="heading">Hello React</h1>-----correct
+✅ You must use className="..."
+❌ You cannot use class="..." in React JSX.
+class is not allowed, because it's a special keyword in JavaScript it used to create objects and classes .instead, we use className to apply styles.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+project (root)
+│
+├── App.js
+│
+└── components
+    ├── Button.js    
+    └── Card.js
+
+
+./
+import Button from './Button';     
+
+
+../      
+import App from '../App';      
+
+
+../../           
+import App from '../../App';     
+           
+
+
+
